@@ -22,8 +22,9 @@ def carry_fans() -> tuple:
             if fan == first_fan:
                 fans.remove(first_fan)
                 fans_carried += [fan]
-            fans_carried_all += [fans_carried]
-            break
+            else:
+                fans_carried_all += [fans_carried]
+                break
     return fans_carried_all[-1][0], len(fans_carried_all)
 def get_answers(simulations: int) -> tuple:
     americans_carried_last = []
