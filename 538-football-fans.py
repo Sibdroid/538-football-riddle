@@ -34,4 +34,4 @@ def get_answers(simulations: int) -> tuple:
         shuttles_used += [result[1]]
     return (statistics.mean(americans_carried_last),
             statistics.mean(shuttles_used))
-print(get_answers(100000))
+print(get_answers(500000))
